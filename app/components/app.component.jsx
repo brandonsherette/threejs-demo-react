@@ -1,10 +1,14 @@
 import React from 'react';
 import HeaderComponent from './header.component.jsx!';
+import DiagramComponent from './diagram.component.jsx!';
 
 var AppComponent = React.createClass({
   render: function() {
     return (
-      <HeaderComponent />
+      <div>
+        <HeaderComponent />
+        <DiagramComponent />
+      </div>
     );
   }
 });
