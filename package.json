@@ -1,0 +1,35 @@
+{
+  "name": "threejs-demo-react",
+  "version": "0.0.1",
+  "description": "Threejs demo utitilizing the react framework.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "keywords": [
+    "ThreeJS",
+    "React",
+    "JavaScript"
+  ],
+  "author": "Brandon Sherette <brandonsherette@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jspm": "^0.16.45",
+    "lite-server": "^2.2.2"
+  },
+  "jspm": {
+    "configFile": "systemjs.config.js",
+    "dependencies": {
+      "jquery": "npm:jquery@^3.1.0",
+      "jsx": "github:floatdrop/plugin-jsx@^1.2.1",
+      "react": "npm:react@^15.3.1",
+      "react-dom": "npm:react-dom@^15.3.1"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
