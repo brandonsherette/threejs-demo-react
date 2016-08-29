@@ -5,7 +5,7 @@ import DiagramComponent from './diagram.component.jsx!';
 var AppComponent = React.createClass({
   render: function() {
     return (
-      <div>
+      <div className="text-center">
         <HeaderComponent />
         <DiagramComponent />
       </div>

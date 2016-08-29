@@ -1,9 +1,9 @@
 import React from 'react';
 
 var HeaderComponent = React.createClass({
-  render: function() {
+  render: function () {
     return (
-      <header class="text-center">
+      <header>
         <h1>ThreeJS Demo - React</h1>
       </header>
     );

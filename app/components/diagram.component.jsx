@@ -1,15 +1,17 @@
 import React from 'react';
 import DiagramControlPanelComponent from './diagram-control-panel.component.jsx!';
-import DiagramSceneComponent from './diagram-scene.component.js';
+import DiagramSceneComponent from './diagram-scene.component.jsx!';
 
 var DiagramComponent = React.createClass({
-  render: function() {
-    <section class="container diagram-component">
-      <div class="row">
-        <div class="col-mid-4"><DiagramControlPanelComponent /></div>
-        <div class="col-mid-8"><DiagramSceneComponent /></div>
-      </div>
-    </section>
+  render: function () {
+    return (
+      <section className="container diagram-component">
+        <div className="row">
+          <div className="col-md-4"><DiagramControlPanelComponent /></div>
+          <div className="col-md-8"><DiagramSceneComponent /></div>
+        </div>
+      </section>
+    );
   }
 });
 

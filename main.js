@@ -1,1 +1,1 @@
-import './lib/react-render';
+import './app/app';
