@@ -1,6 +1,6 @@
 import React from 'react';
 import ControlPanelComponent from './control-panel.component.jsx!';
-import SceneComponent from './scene.component.jsx!';
+import SceneComponent from './scene/scene.component.jsx!';
 
 var DiagramComponent = React.createClass({
   render: function () {

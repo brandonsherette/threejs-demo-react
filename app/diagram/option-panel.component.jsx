@@ -11,8 +11,7 @@ var OptionPanelComponent = React.createClass({
     this.props.options.forEach((option) => {
       let btnClassNames = 'btn btn-default list-group-item';
 
-      console.info('props slug: ' + this.props.selectedOption);
-      console.info('option: ' + option.slug);
+      // add active class if option matches the slug
       if (this.props.selectedOption && this.props.selectedOption === option.slug) {
         btnClassNames += ' active';
       }

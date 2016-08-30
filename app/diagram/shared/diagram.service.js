@@ -38,10 +38,6 @@ var DiagramService = (function () {
    * @since 0.0.1
    */
   function createModel() {
-    console.info(ColorConfig);
-    console.info(ShapeConfig);
-    console.info(TextureConfig);
-
     var model = new DiagramModel({
       color: ColorConfig[0],
       shape: ShapeConfig[0],
