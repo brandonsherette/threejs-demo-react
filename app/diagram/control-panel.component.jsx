@@ -24,15 +24,17 @@ var ControlPanelComponent = React.createClass({
   },
 
   render: function () {
+    var panelGroupId = 'control-panel'
+
     return (
       <section id="diagram-control-panel" className="panel panel-heading">
         <div className="panel-heading">
           <h1 className="text-center">Control Panel</h1>
-          <form>
-            <SelectListComponent label="Shape" options={this.state.shapeOptions} />
-            <SelectListComponent label="Color" options={this.state.colorOptions} />
-            <SelectListComponent label="Texture" options={this.state.textureOptions} />
-          </form>
+          <div className="panel-group" id={panelGroupId} role="tablist">
+            <SelectListComponent title="Shape"    accordianId={panelGroupId} options={this.state.shapeOptions} />
+            <SelectListComponent title="Color"    accordianId={panelGroupId} options={this.state.colorOptions} />
+            <SelectListComponent title="Texture"  accordianId={panelGroupId} options={this.state.textureOptions} />
+          </div>
         </div>
       </section>
     );

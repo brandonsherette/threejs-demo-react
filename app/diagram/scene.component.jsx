@@ -1,7 +1,7 @@
 import React from 'react';
 import DiagramService from '../shared/diagram.service';
 
-var DiagramSceneComponent = React.createClass({
+var SceneComponent = React.createClass({
   getInitialState: function() {
     return {texture: null};
   },
@@ -24,4 +24,4 @@ var DiagramSceneComponent = React.createClass({
   }
 });
 
-export default DiagramSceneComponent;
+export default SceneComponent;
