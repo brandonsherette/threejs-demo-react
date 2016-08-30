@@ -16,7 +16,7 @@ var DiagramSceneComponent = React.createClass({
 
   render: function() {
     return (
-      <div>
+      <div className="text-center">
         <h1>TODO: Add Scene Functionality</h1>
         <p>{this.state.texture}</p>
       </div>
