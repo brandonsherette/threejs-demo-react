@@ -1,5 +1,5 @@
 import React from 'react';
-import DiagramComponent from './diagram.component.jsx!';
+import DiagramComponent from './diagram/diagram.component.jsx!';
 
 var AppComponent = React.createClass({
   render: function() {

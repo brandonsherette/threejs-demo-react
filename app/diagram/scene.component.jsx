@@ -1,5 +1,5 @@
 import React from 'react';
-import DiagramService from '../shared/diagram.service';
+import DiagramService from './shared/diagram.service';
 
 var SceneComponent = React.createClass({
   getInitialState: function() {
