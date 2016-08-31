@@ -23,6 +23,7 @@
     "dependencies": {
       "jquery": "npm:jquery@^3.1.0",
       "jsx": "github:floatdrop/plugin-jsx@^1.2.1",
+      "pubsub-js": "npm:pubsub-js@^1.5.3",
       "react": "npm:react@^15.3.1",
       "react-dom": "npm:react-dom@^15.3.1"
     },

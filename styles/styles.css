@@ -29,3 +29,7 @@ header {
   display: block;
   width: 100%;
 }
+
+.panel-primary > .panel-heading {
+  background-color: #348894;
+}

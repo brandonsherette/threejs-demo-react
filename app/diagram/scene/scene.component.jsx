@@ -1,7 +1,10 @@
 import React from 'react';
 import DiagramScene from './diagram.scene';
+import PubSub from 'pubsub-js';
 
 var SceneComponent = React.createClass({
+  pubsubToken: null,
+
   getInitialState: function() {
     return {
       sceneCanvas: null
@@ -18,6 +21,19 @@ var SceneComponent = React.createClass({
       element: element,
       width: element.offsetWidth
     });
+
+    // add listener
+    this.pubsubToken = PubSub.subscribe('model.diagram:change', (data) => {
+      // have the scene update its model
+      DiagramScene.loadModel();
+      DiagramScene.updateDiagram();
+    });
+  },
+
+  componentWillUnmount: function() {
+    if(this.pubsubToken) {
+      PubSub.unsubscribe(this.pubsubToken);
+    }
   },
 
   render: function() {

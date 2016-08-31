@@ -1,4 +1,5 @@
 import React from 'react';
+import PubSub from 'pubsub-js';
 
 import ColorConfig from './shared/color.config';
 import ShapeConfig from './shared/shape.config';
@@ -8,6 +9,8 @@ import DiagramService from './shared/diagram.service';
 import OptionPanelComponent from './option-panel.component.jsx!';
 
 var ControlPanelComponent = React.createClass({
+  pubsubToken: null,
+
   getInitialState: function() {
     return {
       colorOptions: [],
@@ -24,6 +27,19 @@ var ControlPanelComponent = React.createClass({
       textureOptions: TextureConfig,
       model: DiagramService.get()
     });
+
+    // add listeners
+    this.pubsubToken = PubSub.subscribe('model.diagram:change', () => {
+      this.setState({
+        model: DiagramService.get()
+      });
+    });
+  },
+
+  componentWillUnmount() {
+    if(this.pubsubToken) {
+      PubSub.unsubscribe(this.pubsubToken);
+    }
   },
 
   render: function() {
@@ -39,9 +55,9 @@ var ControlPanelComponent = React.createClass({
         <div className="panel-heading">
           <h1 className="text-center">Control Panel</h1>
           <div className="panel-group" id={panelGroupId} role="tablist" aria-multiselectable="true">
-            <OptionPanelComponent title="Shape"    accordianId={panelGroupId} options={this.state.shapeOptions}   selectedOption={shapeOption} />
-            <OptionPanelComponent title="Color"    accordianId={panelGroupId} options={this.state.colorOptions}   selectedOption={colorOption} />
-            <OptionPanelComponent title="Texture"  accordianId={panelGroupId} options={this.state.textureOptions} selectedOption={textureOption} />
+            <OptionPanelComponent title="Shape"    optionType="shape"    accordianId={panelGroupId} options={this.state.shapeOptions}   selectedOption={shapeOption} />
+            <OptionPanelComponent title="Color"    optionType="color"    accordianId={panelGroupId} options={this.state.colorOptions}   selectedOption={colorOption} />
+            <OptionPanelComponent title="Texture"  optionType="texture"  accordianId={panelGroupId} options={this.state.textureOptions} selectedOption={textureOption} />
           </div>
         </div>
       </section>

@@ -19,6 +19,7 @@ System.config({
     "core-js": "npm:core-js@1.2.7",
     "jquery": "npm:jquery@3.1.0",
     "jsx": "github:floatdrop/plugin-jsx@1.2.1",
+    "pubsub-js": "npm:pubsub-js@1.5.3",
     "react": "npm:react@15.3.1",
     "react-dom": "npm:react-dom@15.3.1",
     "github:floatdrop/plugin-jsx@1.2.1": {
@@ -60,7 +61,7 @@ System.config({
       "path-browserify": "npm:path-browserify@0.0.0"
     },
     "github:jspm/nodelibs-process@0.1.2": {
-      "process": "npm:process@0.11.8"
+      "process": "npm:process@0.11.9"
     },
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
@@ -449,7 +450,7 @@ System.config({
     "npm:process-nextick-args@1.0.7": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:process@0.11.8": {
+    "npm:process@0.11.9": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "vm": "github:jspm/nodelibs-vm@0.1.0"
@@ -466,6 +467,9 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "parse-asn1": "npm:parse-asn1@5.0.0",
       "randombytes": "npm:randombytes@2.0.3"
+    },
+    "npm:pubsub-js@1.5.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:punycode@1.3.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
