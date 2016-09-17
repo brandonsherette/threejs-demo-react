@@ -1,8 +1,12 @@
-import ColorConfig from './color.config';
-import DiagramModel from  './diagram.model';
-import ShapeConfig from './shape.config';
-import TextureConfig from './texture.config';
 import PubSub from 'pubsub-js';
+
+/* Configs */
+import ColorConfig from '../configs/color.config';
+import ShapeConfig from '../configs/shape.config';
+import TextureConfig from '../configs/texture.config';
+
+/* Models */
+import DiagramModel from  '../models/diagram.model';
 
 /**
   * Diagram service

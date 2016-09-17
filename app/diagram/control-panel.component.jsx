@@ -1,10 +1,7 @@
 import React from 'react';
 import PubSub from 'pubsub-js';
 
-import ColorConfig from './shared/color.config';
-import ShapeConfig from './shared/shape.config';
-import TextureConfig from './shared/texture.config';
-import DiagramService from './shared/diagram.service';
+import {ColorConfig, ShapeConfig, TextureConfig, DiagramService} from 'app/shared/index';
 
 import OptionPanelComponent from './option-panel.component.jsx!';
 

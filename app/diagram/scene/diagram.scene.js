@@ -1,4 +1,4 @@
-import DiagramService from '../shared/diagram.service';
+import { DiagramService } from 'app/shared/index';
 
 var DiagramScene = (function() {
   var _camera, _controls, _isAnimating, _mesh, _renderer, _scene;

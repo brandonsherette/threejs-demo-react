@@ -15,6 +15,14 @@
   "author": "Brandon Sherette <brandonsherette@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jspm-build": "0.0.15",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
     "jspm": "^0.16.45",
     "lite-server": "^2.2.2"
   },

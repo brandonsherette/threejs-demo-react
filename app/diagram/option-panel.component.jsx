@@ -1,6 +1,6 @@
 import React from 'react';
 import Util from '../shared/util';
-import DiagramService from './shared/diagram.service';
+import { DiagramService } from 'app/shared/index';
 
 var OptionPanelComponent = React.createClass({
   componentDidMount: function() {

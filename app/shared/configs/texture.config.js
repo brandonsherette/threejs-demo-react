@@ -4,19 +4,19 @@ var TextureConfig = (function () {
       id: 'fa22',
       name: 'Angle Grid',
       slug: 'angle-grid',
-      url: 'textures/angle-grid.png'
+      url: 'resources/textures/angle-grid.png'
     },
     {
       id: 'f111',
       name: 'Cloud',
       slug: 'cloud',
-      url: 'textures/cloud.png'
+      url: 'resources/textures/cloud.png'
     },
     {
       id: 'a211',
       name: 'Grid',
       slug: 'grid',
-      url: 'textures/grid.png'
+      url: 'resources/textures/grid.png'
     }
   ];
 } ());
