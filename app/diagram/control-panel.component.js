@@ -3,7 +3,7 @@ import PubSub from 'pubsub-js';
 
 import {ColorConfig, ShapeConfig, TextureConfig, DiagramService} from 'app/shared/index';
 
-import OptionPanelComponent from './option-panel.component.jsx!';
+import OptionPanelComponent from './option-panel.component';
 
 var ControlPanelComponent = React.createClass({
   pubsubToken: null,

@@ -1,4 +1,4 @@
-import AppComponent from './app.component.jsx!';
+import AppComponent from './app.component';
 import ReactDom from 'react-dom';
 import React from 'react';
 

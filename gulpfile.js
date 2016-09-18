@@ -36,7 +36,7 @@ gulp.task('bundle-app', function() {
     bundleSfx: true,
     defaultJSExtensions: true
   })
-  //.pipe($.uglify()) // uglify not working, possibly issue with jspmBuild having issues, it will work for now though
+  .pipe($.uglify()) // uglify not working, possibly issue with jspmBuild having issues, it will work for now though
   .pipe(gulp.dest(config.build));
 });
 
